@@ -1,0 +1,104 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="inc/default.css">
+        <script type="text/javascript">
+            window.onload = function(){
+              var myLife = document.getElementById("my-life");
+              var myNetwork = document.getElementById("my-networks");
+              var networks = myNetwork.getElementsByTagName("li");
+              for(var i in networks){
+                  networks[i].onmouseover = function(){
+                     myLife.style.backgroundColor = this.getElementsByTagName("a")[0].style.backgroundColor; 
+                  };
+                  networks[i].onmouseout = function(){
+                      myLife.style.backgroundColor = "#444BA5";
+                  };
+              }
+            };
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="my-life">
+                <div id="myself">
+                    <div id = "my-pic"></div>
+                    <div id = "my-name"> 
+                        <span> &lt; Venkateswaran Selvan /&gt; </span>
+                    </div>
+                </div>
+                <div id="my-networks">
+                    <li><a target="_blank" href="https://facebook.com/mailmevenkat" style="background-color: #3b5998;">facebook</a></li>
+                    <li><a target="_blank" href="https://twitter.com/mailmevenkat25" style="background-color: #55acee;">twitter</a></li>
+                    <li><a target="_blank" href="https://github.com/mailmevenkat" style="background-color: #666666;">github</a></li>
+                    <li><a target="_blank" href="https://koding.com/mailmevenkat25" style="background-color: #4ea04c;">koding</a></li>
+                    <li><a target="_blank" href="http://www.creativ.com/mailmevenkat25/profile" style="background-color: #c02126;">[creativ]</a></li>
+                </div>
+            </div>
+            <div id="fun-parts">
+                <p id="title-tint" class="fa fa-code-fork"> Repos</p>
+                <ul id="projects">
+                    <li><a href="#">Pixzelette</a></li>
+                </ul>
+            </div>
+            <div id = "what-i-did-so-far">
+                <p id="title-tint" class="fa fa-suitcase"> Portfolio</p>
+                <ul id="works">
+                    <li>
+                        <p>SpearX, Inc</p>
+                        <a href="inc/portfolio/SpearX.png" download><div style="background-image:url('inc/portfolio/SpearX-min.jpg');"></div></a>
+                        <p><span class="taint">Website</span></p>
+                    </li>
+                    <li>
+                        <p>Cybernova, 2014</p>
+                        <a href="inc/portfolio/cybernova14.png" download> <div style="background-image:url('inc/portfolio/cybernova14-min.jpg');"></div></a>
+                        <p><span class="taint">Website</span></p>
+                    </li>
+                    <li>
+                        <p>Kovai enterprises</p>
+                        <a href="inc/portfolio/ke.png" download><div style="background-image:url('inc/portfolio/ke-min.jpg');"></div></a>
+                        <p><span class="taint">Website template</span></p>
+                    </li>
+                    <li>
+                        <p>SpearX, Inc.</p>
+                        <a href="inc/portfolio/SpearXUI.png" download><div style="background-image:url('inc/portfolio/SpearXUI.png');background-size:cover;background-position:top left;"></div></a>
+                        <p><span class="taint">Website UI template</span></p>
+                    </li>
+                    <li>
+                        <p>Mindfreakers Networking</p>
+                        <a href="inc/portfolio/mfnlogo.png" download><div style="background-image:url('inc/portfolio/mfnlogo-min.jpg');"></div></a>
+                        <p><span class="taint">Logo</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div id = "skill-set">
+                <p id="title-tint" class="fa fa-code"> Skills</p><br>
+                <li><span id="title-tint">HTML 5</span></li>
+                <li><span id="title-tint">CSS 3</span></li>
+                <li><span id="title-tint">JavaScript</span></li>
+                <li><span id="title-tint">NodeJS</span></li>
+                <li><span id="title-tint">C</span></li>
+                <li><span id="title-tint">C++</span></li>
+                <li><span id="title-tint">Java</span></li>
+                <li><span id="title-tint">Ruby</span></li>
+                <li><span id="title-tint">Graphic designing</span></li>
+                <li><span id="title-tint">Logo designing</span></li>
+            </div>
+            <div id = "contact-me">
+                <p id="title-tint" class="fa fa-user"> Contact Me!</p><br>
+                <li><a id="title-tint" href="mailto:mailmevenkat25@gmail.com">mailmevenkat25@gmail.com</a></li>
+            </div>
+            <div id = "hire-me">
+                <p id="title-tint" class="fa fa-cab"> Hire Me!</p><br>
+                <li><span id="title-tint">Hourly rate 7$</span></li>
+                <li><span id="title-tint">Get your quote</span></li>
+                <li><span id="title-tint">Open for negotiation</span></li><br><br>
+                <li><a target="_blank" id="title-tint" href="mailto:mailmevenkat25@gmail.com">Via email</a></li>
+                <li><a target="_blank" id="title-tint" href="https://www.odesk.com/o/profiles/users/_~0114ac93d42b51202a">Via Odesk</a></li>
+            </div>
+        </div>    
+    </body>
+</html>
